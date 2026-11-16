@@ -1,0 +1,84 @@
+/* =========================================
+   NOVASTAR 3.0 CLEAN
+   UI COMPONENTS — PAGINATION
+========================================= */
+
+/* PAGINATION CONTAINER */
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    width: 100%;
+    margin-top: var(--space-5);
+}
+
+/* PAGINATION BUTTON */
+
+.pagination-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    min-height: 40px;
+    padding: 8px 12px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    color: var(--color-text-secondary);
+    background: var(--color-surface);
+    font-family: var(--font-primary);
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition:
+        color var(--transition-fast),
+        background var(--transition-fast),
+        border-color var(--transition-fast);
+}
+
+/* HOVER */
+
+.pagination-button:hover:not(:disabled) {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+/* ACTIVE PAGE */
+
+.pagination-button.active {
+    border-color: var(--color-primary);
+    color: var(--color-text-primary);
+    background: var(--color-primary);
+}
+
+/* DISABLED BUTTON */
+
+.pagination-button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+/* PAGE INFORMATION */
+
+.pagination-info {
+    color: var(--color-text-muted);
+    font-size: 0.8rem;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 480px) {
+
+    .pagination {
+        gap: 6px;
+    }
+
+    .pagination-button {
+        min-width: 36px;
+        min-height: 36px;
+        padding: 6px 9px;
+    }
+
+}

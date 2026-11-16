@@ -1,0 +1,114 @@
+/* =========================================
+   NOVASTAR 3.0 CLEAN
+   LAYOUT — TOPBAR
+========================================= */
+
+/* TOPBAR */
+
+.app-topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    width: 100%;
+    min-height: 76px;
+    padding: var(--space-3) var(--space-6);
+    background: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+}
+
+/* LEFT AREA */
+
+.topbar-left {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    min-width: 0;
+}
+
+/* CENTER AREA */
+
+.topbar-center {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+}
+
+/* RIGHT AREA */
+
+.topbar-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: var(--space-3);
+    flex-shrink: 0;
+}
+
+/* SEARCH */
+
+.topbar-search {
+    width: 100%;
+    max-width: 460px;
+}
+
+/* ACTION BUTTONS */
+
+.topbar-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+    border: 1px solid transparent;
+    border-radius: var(--radius-md);
+    background: transparent;
+    color: var(--color-text-secondary);
+    transition:
+        background var(--transition-fast),
+        color var(--transition-fast);
+}
+
+.topbar-action:hover {
+    color: var(--color-text-primary);
+    background: var(--color-surface-elevated);
+}
+
+/* PROFILE */
+
+.topbar-profile {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    min-width: 0;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .app-topbar {
+        min-height: 64px;
+        padding: var(--space-3) var(--space-4);
+    }
+
+    .topbar-center {
+        justify-content: flex-start;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .app-topbar {
+        gap: var(--space-2);
+        padding-inline: var(--space-3);
+    }
+
+    .topbar-search {
+        max-width: 100%;
+    }
+
+}

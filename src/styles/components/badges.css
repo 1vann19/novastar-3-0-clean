@@ -1,0 +1,95 @@
+
+/* =========================================
+   NOVASTAR 3.0 CLEAN
+   UI COMPONENTS — BADGES
+========================================= */
+
+/* BASE BADGE */
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: fit-content;
+    min-height: 24px;
+    padding: 4px 10px;
+    border: 1px solid transparent;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1.3;
+    white-space: nowrap;
+}
+
+/* PRIMARY */
+
+.badge-primary {
+    color: var(--color-primary);
+    background: rgba(9, 187, 200, 0.12);
+    border-color: rgba(9, 187, 200, 0.2);
+}
+
+/* SUCCESS */
+
+.badge-success {
+    color: var(--color-success);
+    background: rgba(132, 209, 117, 0.12);
+    border-color: rgba(132, 209, 117, 0.2);
+}
+
+/* WARNING */
+
+.badge-warning {
+    color: var(--color-warning);
+    background: rgba(244, 198, 106, 0.12);
+    border-color: rgba(244, 198, 106, 0.2);
+}
+
+/* DANGER */
+
+.badge-danger {
+    color: var(--color-danger);
+    background: rgba(240, 120, 120, 0.12);
+    border-color: rgba(240, 120, 120, 0.2);
+}
+
+/* NEUTRAL */
+
+.badge-neutral {
+    color: var(--color-text-secondary);
+    background: var(--color-surface-elevated);
+    border-color: var(--color-border);
+}
+
+/* ACCENT */
+
+.badge-accent {
+    color: var(--color-accent);
+    background: rgba(122, 255, 5, 0.08);
+    border-color: rgba(122, 255, 5, 0.18);
+}
+
+/* SIZES */
+
+.badge-sm {
+    min-height: 20px;
+    padding: 3px 8px;
+    font-size: 0.68rem;
+}
+
+.badge-lg {
+    min-height: 30px;
+    padding: 6px 12px;
+    font-size: 0.85rem;
+}
+
+/* STATUS DOT */
+
+.badge-dot {
+    width: 7px;
+    height: 7px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: currentColor;
+}

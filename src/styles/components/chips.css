@@ -1,0 +1,124 @@
+/* =========================================
+   NOVASTAR 3.0 CLEAN
+   UI COMPONENTS — CHIPS
+========================================= */
+
+/* CHIPS CONTAINER */
+
+.chips {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    width: 100%;
+}
+
+/* BASE CHIP */
+
+.chip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    min-height: 30px;
+    padding: 5px 12px;
+    border: 1px solid var(--color-border);
+    border-radius: 999px;
+    color: var(--color-text-secondary);
+    background: var(--color-surface);
+    font-family: var(--font-primary);
+    font-size: 0.78rem;
+    font-weight: 600;
+    white-space: nowrap;
+    transition:
+        color var(--transition-fast),
+        background var(--transition-fast),
+        border-color var(--transition-fast);
+}
+
+/* CHIP VARIANTS */
+
+.chip-primary {
+    border-color: rgba(9, 187, 200, 0.3);
+    color: var(--color-primary);
+    background: rgba(9, 187, 200, 0.1);
+}
+
+.chip-accent {
+    border-color: rgba(122, 255, 5, 0.25);
+    color: var(--color-accent);
+    background: rgba(122, 255, 5, 0.08);
+}
+
+.chip-success {
+    color: var(--color-success);
+    background: rgba(132, 209, 117, 0.1);
+}
+
+.chip-warning {
+    color: var(--color-warning);
+    background: rgba(244, 198, 106, 0.1);
+}
+
+.chip-danger {
+    color: var(--color-danger);
+    background: rgba(240, 120, 120, 0.1);
+}
+
+/* INTERACTIVE CHIP */
+
+.chip-button {
+    cursor: pointer;
+}
+
+.chip-button:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+.chip-button.active {
+    border-color: var(--color-primary);
+    color: var(--color-text-primary);
+    background: rgba(9, 187, 200, 0.15);
+}
+
+/* CHIP CLOSE BUTTON */
+
+.chip-close {
+    display: inline-grid;
+    place-items: center;
+    width: 18px;
+    height: 18px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    color: inherit;
+    background: transparent;
+    cursor: pointer;
+}
+
+.chip-close:hover {
+    background: rgba(200, 224, 244, 0.12);
+}
+
+/* FOCUS */
+
+.chip-button:focus-visible,
+.chip-close:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 640px) {
+
+    .chips {
+        gap: 6px;
+    }
+
+    .chip {
+        font-size: 0.74rem;
+    }
+
+}

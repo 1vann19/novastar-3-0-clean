@@ -1,0 +1,71 @@
+/* =========================================
+   NOVASTAR 3.0 CLEAN
+   GLOBAL STYLESHEET
+========================================= */
+
+
+/* =========================================
+   01. BASE
+========================================= */
+
+@import './base/variables.css';
+@import './base/reset.css';
+@import './base/typography.css';
+@import './base/animations.css';
+
+
+/* =========================================
+   02. LAYOUTS
+========================================= */
+
+@import './layouts/container.css';
+@import './layouts/grid.css';
+@import './layouts/flex.css';
+@import './layouts/spacing.css';
+@import './layouts/responsive.css';
+
+@import './layouts/app-shell.css';
+@import './layouts/sidebar.css';
+@import './layouts/topbar.css';
+@import './layouts/mobile-navigation.css';
+@import './layouts/startup.css';
+@import './layouts/pages.css';
+
+
+/* =========================================
+   03. COMPONENTS
+========================================= */
+
+@import './components/buttons.css';
+@import './components/cards.css';
+@import './components/badges.css';
+@import './components/forms.css';
+@import './components/feedback.css';
+
+@import './components/modals.css';
+@import './components/dropdowns.css';
+@import './components/progress.css';
+@import './components/avatars.css';
+@import './components/tooltips.css';
+
+@import './components/tabs.css';
+@import './components/breadcrumbs.css';
+@import './components/media.css';
+@import './components/tables.css';
+@import './components/lists.css';
+
+@import './components/search.css';
+@import './components/notifications.css';
+@import './components/skeletons.css';
+@import './components/pagination.css';
+@import './components/accordions.css';
+
+@import './components/switches.css';
+@import './components/chips.css';
+
+
+/* =========================================
+   04. UTILITIES
+========================================= */
+
+@import './base/utilities.css';

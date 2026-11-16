@@ -1,0 +1,113 @@
+/* =========================================
+   NOVASTAR 3.0 CLEAN
+   UI COMPONENTS — PROGRESS
+========================================= */
+
+/* PROGRESS CONTAINER */
+
+.progress {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    width: 100%;
+}
+
+/* PROGRESS TRACK */
+
+.progress-track {
+    position: relative;
+    flex: 1;
+    min-width: 0;
+    height: 8px;
+    overflow: hidden;
+    border-radius: 999px;
+    background: var(--color-surface-elevated);
+}
+
+/* PROGRESS BAR */
+
+.progress-bar {
+    display: block;
+    width: 0;
+    height: 100%;
+    border-radius: inherit;
+    background: var(--color-primary);
+    transition: width 400ms ease;
+}
+
+/* PROGRESS VARIANTS */
+
+.progress-success .progress-bar {
+    background: var(--color-success);
+}
+
+.progress-warning .progress-bar {
+    background: var(--color-warning);
+}
+
+.progress-danger .progress-bar {
+    background: var(--color-danger);
+}
+
+.progress-accent .progress-bar {
+    background: var(--color-accent);
+}
+
+/* PROGRESS SIZES */
+
+.progress-sm .progress-track {
+    height: 5px;
+}
+
+.progress-lg .progress-track {
+    height: 12px;
+}
+
+/* PROGRESS LABEL */
+
+.progress-label {
+    flex-shrink: 0;
+    color: var(--color-text-secondary);
+    font-size: 0.8rem;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+}
+
+/* CIRCULAR PROGRESS */
+
+.progress-circle {
+    display: grid;
+    place-items: center;
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: conic-gradient(
+        var(--color-primary) 0deg,
+        var(--color-primary) var(--progress-angle, 0deg),
+        var(--color-surface-elevated) var(--progress-angle, 0deg),
+        var(--color-surface-elevated) 360deg
+    );
+}
+
+/* CIRCLE INNER */
+
+.progress-circle-inner {
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--color-surface);
+    color: var(--color-text-primary);
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+    .progress-bar {
+        transition: none;
+    }
+}

@@ -1,0 +1,111 @@
+
+/* =========================================
+   NOVASTAR 3.0 CLEAN
+   UI COMPONENTS — MEDIA
+========================================= */
+
+/* MEDIA CONTAINER */
+
+.media {
+    position: relative;
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+    border-radius: var(--radius-lg);
+    background: var(--color-surface-elevated);
+}
+
+/* MEDIA IMAGE */
+
+.media img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ASPECT RATIOS */
+
+.media-16-9 {
+    aspect-ratio: 16 / 9;
+}
+
+.media-4-3 {
+    aspect-ratio: 4 / 3;
+}
+
+.media-square {
+    aspect-ratio: 1 / 1;
+}
+
+.media-portrait {
+    aspect-ratio: 3 / 4;
+}
+
+/* IMAGE FIT */
+
+.media-contain img {
+    object-fit: contain;
+}
+
+.media-cover img {
+    object-fit: cover;
+}
+
+/* MEDIA OVERLAY */
+
+.media-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: var(--space-2);
+    padding: var(--space-4);
+    background: linear-gradient(
+        to top,
+        rgba(3, 25, 39, 0.88),
+        transparent 75%
+    );
+}
+
+/* MEDIA TITLE */
+
+.media-title {
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/* MEDIA DESCRIPTION */
+
+.media-description {
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 0.82rem;
+    line-height: 1.5;
+}
+
+/* MEDIA PLACEHOLDER */
+
+.media-placeholder {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    min-height: 160px;
+    color: var(--color-text-muted);
+    background: var(--color-surface-elevated);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 640px) {
+
+    .media-overlay {
+        padding: var(--space-3);
+    }
+
+    .media-title {
+        font-size: 0.9rem;
+    }
+
+}

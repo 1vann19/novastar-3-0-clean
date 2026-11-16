@@ -1,0 +1,113 @@
+/* =========================================
+   NOVASTAR 3.0 CLEAN
+   UI COMPONENTS — SWITCHES
+========================================= */
+
+/* SWITCH CONTAINER */
+
+.switch {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-3);
+    cursor: pointer;
+}
+
+/* HIDE NATIVE CHECKBOX */
+
+.switch input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    opacity: 0;
+}
+
+/* SWITCH TRACK */
+
+.switch-track {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+    width: 46px;
+    height: 26px;
+    padding: 3px;
+    border: 1px solid var(--color-border);
+    border-radius: 999px;
+    background: var(--color-surface-elevated);
+    transition:
+        background var(--transition-fast),
+        border-color var(--transition-fast);
+}
+
+/* SWITCH THUMB */
+
+.switch-thumb {
+    display: block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--color-text-secondary);
+    transition:
+        transform var(--transition-fast),
+        background var(--transition-fast);
+}
+
+/* CHECKED STATE */
+
+.switch input:checked + .switch-track {
+    border-color: var(--color-primary);
+    background: var(--color-primary);
+}
+
+.switch input:checked + .switch-track .switch-thumb {
+    transform: translateX(20px);
+    background: #FFFFFF;
+}
+
+/* FOCUS STATE */
+
+.switch input:focus-visible + .switch-track {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 3px;
+}
+
+/* DISABLED STATE */
+
+.switch input:disabled + .switch-track {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
+.switch:has(input:disabled) {
+    cursor: not-allowed;
+}
+
+/* SWITCH LABEL */
+
+.switch-label {
+    color: var(--color-text-primary);
+    font-size: 0.88rem;
+    font-weight: 500;
+}
+
+/* SWITCH DESCRIPTION */
+
+.switch-description {
+    display: block;
+    margin-top: 3px;
+    color: var(--color-text-muted);
+    font-size: 0.78rem;
+    line-height: 1.5;
+}
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .switch-track,
+    .switch-thumb {
+        transition: none;
+    }
+
+}

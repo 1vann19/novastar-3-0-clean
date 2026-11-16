@@ -1,0 +1,138 @@
+
+/* =========================================
+   NOVASTAR 3.0 CLEAN
+   UI COMPONENTS — NOTIFICATIONS
+========================================= */
+
+/* NOTIFICATION CONTAINER */
+
+.notifications {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 0;
+}
+
+/* NOTIFICATION ITEM */
+
+.notification {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-3);
+    width: 100%;
+    padding: 16px;
+    border-bottom: 1px solid var(--color-border);
+    transition: background var(--transition-fast);
+}
+
+.notification:last-child {
+    border-bottom: 0;
+}
+
+.notification:hover {
+    background: rgba(9, 187, 200, 0.045);
+}
+
+/* NOTIFICATION ICON */
+
+.notification-icon {
+    display: grid;
+    flex-shrink: 0;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-md);
+    color: var(--color-primary);
+    background: rgba(9, 187, 200, 0.1);
+}
+
+/* NOTIFICATION CONTENT */
+
+.notification-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.notification-title {
+    color: var(--color-text-primary);
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.notification-description {
+    margin-top: 4px;
+    color: var(--color-text-secondary);
+    font-size: 0.82rem;
+    line-height: 1.5;
+}
+
+.notification-time {
+    display: block;
+    margin-top: 6px;
+    color: var(--color-text-muted);
+    font-size: 0.75rem;
+}
+
+/* UNREAD NOTIFICATION */
+
+.notification.unread {
+    background: rgba(9, 187, 200, 0.055);
+}
+
+.notification.unread .notification-title::after {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    margin-left: 8px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    content: "";
+    vertical-align: middle;
+}
+
+/* NOTIFICATION ACTIONS */
+
+.notification-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    flex-shrink: 0;
+}
+
+/* NOTIFICATION COUNTER */
+
+.notification-count {
+    display: inline-grid;
+    place-items: center;
+    min-width: 20px;
+    height: 20px;
+    padding: 0 5px;
+    border-radius: 999px;
+    color: #FFFFFF;
+    background: var(--color-danger);
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+/* EMPTY STATE */
+
+.notifications-empty {
+    padding: var(--space-6);
+    color: var(--color-text-muted);
+    text-align: center;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 640px) {
+
+    .notification {
+        gap: var(--space-2);
+        padding: 12px;
+    }
+
+    .notification-description {
+        font-size: 0.78rem;
+    }
+
+}

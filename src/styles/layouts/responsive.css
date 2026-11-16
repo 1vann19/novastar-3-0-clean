@@ -1,0 +1,75 @@
+/* =========================================
+   NOVASTAR 3.0 CLEAN
+   RESPONSIVE SYSTEM
+========================================= */
+
+/* TABLETS AND SMALL LAPTOPS */
+
+@media (max-width: 1024px) {
+
+    .hide-tablet {
+        display: none !important;
+    }
+
+    .show-tablet {
+        display: block;
+    }
+
+}
+
+/* MOBILE DEVICES */
+
+@media (max-width: 768px) {
+
+    .hide-mobile {
+        display: none !important;
+    }
+
+    .show-mobile {
+        display: block;
+    }
+
+    .mobile-full-width {
+        width: 100%;
+    }
+
+    .mobile-text-center {
+        text-align: center;
+    }
+
+}
+
+/* SMALL MOBILE DEVICES */
+
+@media (max-width: 480px) {
+
+    .hide-small-mobile {
+        display: none !important;
+    }
+
+    .show-small-mobile {
+        display: block;
+    }
+
+}
+
+/* LARGE SCREENS */
+
+@media (min-width: 1441px) {
+
+    .large-screen-content {
+        max-width: 1600px;
+        margin-inline: auto;
+    }
+
+}
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+}

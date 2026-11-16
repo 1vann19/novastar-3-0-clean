@@ -1,0 +1,114 @@
+
+/* =========================================
+   NOVASTAR 3.0 CLEAN
+   UI COMPONENTS — ACCORDIONS
+========================================= */
+
+/* ACCORDION CONTAINER */
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 0;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    background: var(--color-surface);
+    overflow: hidden;
+}
+
+/* ACCORDION ITEM */
+
+.accordion-item {
+    width: 100%;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.accordion-item:last-child {
+    border-bottom: 0;
+}
+
+/* ACCORDION HEADER */
+
+.accordion-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3);
+    width: 100%;
+    min-height: 52px;
+    padding: 14px 16px;
+    border: 0;
+    color: var(--color-text-primary);
+    background: transparent;
+    font-family: var(--font-primary);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: left;
+    cursor: pointer;
+    transition: background var(--transition-fast);
+}
+
+.accordion-header:hover {
+    background: rgba(9, 187, 200, 0.045);
+}
+
+/* ACCORDION ICON */
+
+.accordion-icon {
+    flex-shrink: 0;
+    color: var(--color-text-muted);
+    transition: transform var(--transition-fast);
+}
+
+.accordion-item.open .accordion-icon {
+    transform: rotate(180deg);
+}
+
+/* ACCORDION CONTENT */
+
+.accordion-content {
+    padding: 0 16px 16px;
+    color: var(--color-text-secondary);
+    font-size: 0.88rem;
+    line-height: 1.6;
+}
+
+/* ACCORDION CONTENT HIDDEN */
+
+.accordion-content[hidden] {
+    display: none;
+}
+
+/* ACCORDION FOCUS */
+
+.accordion-header:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: -3px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 640px) {
+
+    .accordion-header {
+        padding: 12px;
+        font-size: 0.85rem;
+    }
+
+    .accordion-content {
+        padding: 0 12px 12px;
+        font-size: 0.82rem;
+    }
+
+}
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .accordion-icon {
+        transition: none;
+    }
+
+}

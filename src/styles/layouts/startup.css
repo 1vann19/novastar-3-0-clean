@@ -1,0 +1,71 @@
+
+/* =========================================
+   NOVASTAR 3.0 CLEAN
+   LAYOUT — STARTUP SCREEN
+========================================= */
+
+.startup-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    padding: var(--space-6);
+    text-align: center;
+    background:
+        radial-gradient(
+            circle at 50% 40%,
+            rgba(9, 187, 200, 0.09),
+            transparent 55%
+        ),
+        var(--color-background);
+}
+
+.startup-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+}
+
+.startup-symbol {
+    color: var(--color-primary);
+    font-size: 2.5rem;
+    line-height: 1;
+}
+
+.startup-brand h1 {
+    margin: 0;
+    color: var(--color-text-primary);
+    font-size: clamp(2.5rem, 7vw, 4.5rem);
+    font-weight: 800;
+    letter-spacing: 0.08em;
+}
+
+.startup-version {
+    color: var(--color-primary);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+}
+
+.startup-message {
+    margin-top: var(--space-5);
+    color: var(--color-text-secondary);
+    font-size: 1rem;
+}
+
+.startup-status {
+    margin-top: var(--space-6);
+    color: var(--color-success);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+}
+
+@media (max-width: 640px) {
+    .startup-screen {
+        padding: var(--space-4);
+    }
+}

@@ -1,0 +1,130 @@
+/* =========================================
+   NOVASTAR 3.0 CLEAN
+   UI COMPONENTS — BUTTONS
+========================================= */
+
+/* BASE BUTTON */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    min-height: 42px;
+    padding: 10px 18px;
+    border: 1px solid transparent;
+    border-radius: var(--radius-md);
+    font-family: var(--font-primary);
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    cursor: pointer;
+    transition:
+        background var(--transition-fast),
+        color var(--transition-fast),
+        border-color var(--transition-fast),
+        transform var(--transition-fast);
+}
+
+/* PRIMARY */
+
+.btn-primary {
+    color: #031927;
+    background: var(--color-primary);
+}
+
+.btn-primary:hover {
+    background: var(--color-primary-hover);
+    transform: translateY(-1px);
+}
+
+/* SECONDARY */
+
+.btn-secondary {
+    color: var(--color-text-primary);
+    background: var(--color-surface-elevated);
+    border-color: var(--color-border);
+}
+
+.btn-secondary:hover {
+    border-color: var(--color-primary);
+}
+
+/* OUTLINE */
+
+.btn-outline {
+    color: var(--color-primary);
+    background: transparent;
+    border-color: var(--color-primary);
+}
+
+.btn-outline:hover {
+    color: var(--color-background);
+    background: var(--color-primary);
+}
+
+/* GHOST */
+
+.btn-ghost {
+    color: var(--color-text-secondary);
+    background: transparent;
+}
+
+.btn-ghost:hover {
+    color: var(--color-text-primary);
+    background: var(--color-surface-elevated);
+}
+
+/* DANGER */
+
+.btn-danger {
+    color: #FFFFFF;
+    background: var(--color-danger);
+}
+
+.btn-danger:hover {
+    filter: brightness(1.08);
+}
+
+/* SIZES */
+
+.btn-sm {
+    min-height: 34px;
+    padding: 7px 12px;
+    font-size: 0.8rem;
+}
+
+.btn-lg {
+    min-height: 50px;
+    padding: 13px 24px;
+    font-size: 1rem;
+}
+
+/* FULL WIDTH */
+
+.btn-block {
+    display: flex;
+    width: 100%;
+}
+
+/* DISABLED */
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* ACCESSIBILITY */
+
+.btn:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .btn {
+        transition: none;
+    }
+}

@@ -1,0 +1,77 @@
+/* =========================================
+   NOVASTAR 3.0 CLEAN
+   LAYOUT — GRID SYSTEM
+========================================= */
+
+/* BASE GRID */
+
+.grid-layout {
+    display: grid;
+    width: 100%;
+    gap: var(--space-4);
+}
+
+/* GRID COLUMNS */
+
+.grid-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+/* AUTO GRID */
+
+.grid-auto {
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(min(100%, 240px), 1fr)
+    );
+}
+
+/* GRID SPACING */
+
+.grid-gap-sm {
+    gap: var(--space-2);
+}
+
+.grid-gap-md {
+    gap: var(--space-4);
+}
+
+.grid-gap-lg {
+    gap: var(--space-6);
+}
+
+/* GRID ITEM */
+
+.grid-item {
+    min-width: 0;
+}
+
+/* RESPONSIVE TABLET */
+
+@media (max-width: 1024px) {
+
+    .grid-4 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+/* RESPONSIVE MOBILE */
+
+@media (max-width: 640px) {
+
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+}

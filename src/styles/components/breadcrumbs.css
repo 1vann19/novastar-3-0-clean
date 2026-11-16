@@ -1,0 +1,72 @@
+/* =========================================
+   NOVASTAR 3.0 CLEAN
+   UI COMPONENTS — BREADCRUMBS
+========================================= */
+
+/* BREADCRUMB CONTAINER */
+
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    width: 100%;
+    min-width: 0;
+    margin-bottom: var(--space-4);
+    color: var(--color-text-muted);
+    font-size: 0.82rem;
+}
+
+/* BREADCRUMB ITEM */
+
+.breadcrumb-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 0;
+}
+
+/* BREADCRUMB LINK */
+
+.breadcrumb-link {
+    color: var(--color-text-secondary);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+.breadcrumb-link:hover {
+    color: var(--color-primary);
+}
+
+/* CURRENT PAGE */
+
+.breadcrumb-current {
+    overflow: hidden;
+    color: var(--color-text-primary);
+    font-weight: 600;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* SEPARATOR */
+
+.breadcrumb-separator {
+    flex-shrink: 0;
+    color: var(--color-text-muted);
+    opacity: 0.65;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 480px) {
+
+    .breadcrumbs {
+        gap: 6px;
+        font-size: 0.75rem;
+    }
+
+    .breadcrumb-item {
+        gap: 6px;
+    }
+
+}

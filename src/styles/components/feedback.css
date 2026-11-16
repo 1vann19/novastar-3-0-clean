@@ -1,0 +1,123 @@
+/* =========================================
+   NOVASTAR 3.0 CLEAN
+   UI COMPONENTS — FEEDBACK
+========================================= */
+
+/* BASE ALERT */
+
+.alert {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-3);
+    width: 100%;
+    padding: var(--space-4);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background: var(--color-surface);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* ALERT VARIANTS */
+
+.alert-info {
+    color: var(--color-primary);
+    background: rgba(9, 187, 200, 0.08);
+    border-color: rgba(9, 187, 200, 0.25);
+}
+
+.alert-success {
+    color: var(--color-success);
+    background: rgba(132, 209, 117, 0.08);
+    border-color: rgba(132, 209, 117, 0.25);
+}
+
+.alert-warning {
+    color: var(--color-warning);
+    background: rgba(244, 198, 106, 0.08);
+    border-color: rgba(244, 198, 106, 0.25);
+}
+
+.alert-danger {
+    color: var(--color-danger);
+    background: rgba(240, 120, 120, 0.08);
+    border-color: rgba(240, 120, 120, 0.25);
+}
+
+/* ALERT CONTENT */
+
+.alert-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.alert-title {
+    margin-bottom: 4px;
+    color: var(--color-text-primary);
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+/* LOADING SPINNER */
+
+.loading-spinner {
+    width: 28px;
+    height: 28px;
+    border: 3px solid var(--color-border);
+    border-top-color: var(--color-primary);
+    border-radius: 50%;
+    animation: feedback-spin 800ms linear infinite;
+}
+
+@keyframes feedback-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* LOADING CONTAINER */
+
+.loading-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-3);
+    min-height: 160px;
+    color: var(--color-text-muted);
+    text-align: center;
+}
+
+/* EMPTY STATE */
+
+.empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-3);
+    min-height: 220px;
+    padding: var(--space-5);
+    text-align: center;
+}
+
+.empty-state-title {
+    color: var(--color-text-primary);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.empty-state-description {
+    max-width: 420px;
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+}
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+    .loading-spinner {
+        animation: none;
+        border-top-color: var(--color-primary);
+    }
+}

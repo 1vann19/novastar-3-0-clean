@@ -1,0 +1,54 @@
+/* =========================================
+   NOVASTAR 3.0 CLEAN
+   DESIGN SYSTEM — VARIABLES
+========================================= */
+
+:root {
+
+    /* BRAND COLORS */
+    --color-primary: #09BBC8;
+    --color-primary-hover: #16D5DF;
+    --color-accent: #7AFF05;
+
+    /* BACKGROUNDS */
+    --color-background: #031927;
+    --color-surface: #07181E;
+    --color-surface-elevated: #0C2D45;
+
+    /* TEXT */
+    --color-text-primary: #E6FBDA;
+    --color-text-secondary: #C8E0F4;
+    --color-text-muted: #91A9B8;
+
+    /* BORDERS */
+    --color-border: rgba(200, 224, 244, 0.12);
+
+    /* STATUS */
+    --color-success: #84D175;
+    --color-warning: #F4C66A;
+    --color-danger: #F07878;
+    --color-info: #09BBC8;
+
+    /* TYPOGRAPHY */
+    --font-primary: 'Inter', sans-serif;
+
+    /* SPACING */
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 24px;
+    --space-6: 32px;
+    --space-7: 48px;
+
+    /* BORDER RADIUS */
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 18px;
+    --radius-xl: 24px;
+
+    /* EFFECTS */
+    --shadow-soft: 0 8px 30px rgba(0, 0, 0, 0.18);
+    --transition-fast: 180ms ease;
+
+}

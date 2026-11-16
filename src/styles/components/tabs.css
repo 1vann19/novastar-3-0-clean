@@ -1,0 +1,113 @@
+
+/* =========================================
+   NOVASTAR 3.0 CLEAN
+   UI COMPONENTS — TABS
+========================================= */
+
+/* TABS CONTAINER */
+
+.tabs {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    width: 100%;
+    min-width: 0;
+    overflow-x: auto;
+    border-bottom: 1px solid var(--color-border);
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-primary) transparent;
+}
+
+/* TAB BUTTON */
+
+.tab {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    min-height: 44px;
+    padding: 10px 16px;
+    border: 0;
+    border-bottom: 2px solid transparent;
+    background: transparent;
+    color: var(--color-text-muted);
+    font-family: var(--font-primary);
+    font-size: 0.88rem;
+    font-weight: 600;
+    white-space: nowrap;
+    cursor: pointer;
+    transition:
+        color var(--transition-fast),
+        border-color var(--transition-fast);
+}
+
+/* HOVER */
+
+.tab:hover {
+    color: var(--color-text-primary);
+}
+
+/* ACTIVE TAB */
+
+.tab.active {
+    color: var(--color-primary);
+    border-bottom-color: var(--color-primary);
+}
+
+/* TAB CONTENT */
+
+.tab-content {
+    width: 100%;
+    min-width: 0;
+    padding-top: var(--space-5);
+}
+
+/* TAB PANEL */
+
+.tab-panel {
+    width: 100%;
+    min-width: 0;
+}
+
+/* PILL STYLE */
+
+.tabs-pills {
+    gap: var(--space-2);
+    padding: 4px;
+    border: 0;
+    border-radius: var(--radius-lg);
+    background: var(--color-surface);
+}
+
+.tabs-pills .tab {
+    border: 0;
+    border-radius: var(--radius-md);
+}
+
+.tabs-pills .tab.active {
+    color: var(--color-text-primary);
+    background: var(--color-surface-elevated);
+}
+
+/* ACCESSIBILITY */
+
+.tab:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: -3px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 640px) {
+
+    .tabs {
+        gap: 0;
+    }
+
+    .tab {
+        padding-inline: 12px;
+        font-size: 0.82rem;
+    }
+
+}

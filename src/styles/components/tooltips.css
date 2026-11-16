@@ -1,0 +1,97 @@
+/* =========================================
+   NOVASTAR 3.0 CLEAN
+   UI COMPONENTS — TOOLTIPS
+========================================= */
+
+/* TOOLTIP CONTAINER */
+
+.tooltip {
+    position: relative;
+    display: inline-flex;
+    width: fit-content;
+}
+
+/* TOOLTIP CONTENT */
+
+.tooltip-content {
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 50%;
+    z-index: 700;
+    width: max-content;
+    max-width: 240px;
+    padding: 8px 12px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background: var(--color-surface-elevated);
+    color: var(--color-text-primary);
+    font-size: 0.75rem;
+    line-height: 1.4;
+    text-align: center;
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-50%, 4px);
+    transition:
+        opacity var(--transition-fast),
+        transform var(--transition-fast),
+        visibility var(--transition-fast);
+}
+
+/* SHOW ON HOVER */
+
+.tooltip:hover .tooltip-content,
+.tooltip:focus-within .tooltip-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0);
+}
+
+/* BOTTOM POSITION */
+
+.tooltip-bottom .tooltip-content {
+    top: calc(100% + 8px);
+    bottom: auto;
+    transform: translate(-50%, -4px);
+}
+
+.tooltip-bottom:hover .tooltip-content,
+.tooltip-bottom:focus-within .tooltip-content {
+    transform: translate(-50%, 0);
+}
+
+/* LEFT POSITION */
+
+.tooltip-left .tooltip-content {
+    top: 50%;
+    right: calc(100% + 8px);
+    bottom: auto;
+    left: auto;
+    transform: translateY(-50%);
+}
+
+/* RIGHT POSITION */
+
+.tooltip-right .tooltip-content {
+    top: 50%;
+    right: auto;
+    bottom: auto;
+    left: calc(100% + 8px);
+    transform: translateY(-50%);
+}
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+    .tooltip-content {
+        transition: none;
+    }
+}
+
+/* TOUCH DEVICES */
+
+@media (hover: none) {
+    .tooltip-content {
+        display: none;
+    }
+}

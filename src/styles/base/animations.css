@@ -1,0 +1,105 @@
+/* =========================================
+   NOVASTAR 3.0 CLEAN
+   GLOBAL ANIMATIONS
+========================================= */
+
+/* FADE IN */
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* FADE UP */
+
+@keyframes fade-up {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* FADE DOWN */
+
+@keyframes fade-down {
+    from {
+        opacity: 0;
+        transform: translateY(-12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* SCALE IN */
+
+@keyframes scale-in {
+    from {
+        opacity: 0;
+        transform: scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* SOFT PULSE */
+
+@keyframes soft-pulse {
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.65;
+    }
+}
+
+/* ANIMATION UTILITIES */
+
+.animate-fade-in {
+    animation: fade-in 400ms ease both;
+}
+
+.animate-fade-up {
+    animation: fade-up 500ms ease both;
+}
+
+.animate-fade-down {
+    animation: fade-down 400ms ease both;
+}
+
+.animate-scale-in {
+    animation: scale-in 350ms ease both;
+}
+
+.animate-soft-pulse {
+    animation: soft-pulse 2s ease-in-out infinite;
+}
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+    .animate-fade-in,
+    .animate-fade-up,
+    .animate-fade-down,
+    .animate-scale-in,
+    .animate-soft-pulse {
+        animation: none;
+    }
+}

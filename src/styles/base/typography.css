@@ -1,0 +1,96 @@
+/* =========================================
+   NOVASTAR 3.0 CLEAN
+   TYPOGRAPHY SYSTEM
+========================================= */
+
+/* HEADINGS */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color-text-primary);
+    font-family: var(--font-primary);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/* HEADING SIZES */
+
+h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+h2 {
+    font-size: clamp(1.6rem, 3vw, 2.5rem);
+}
+
+h3 {
+    font-size: 1.35rem;
+}
+
+h4 {
+    font-size: 1.15rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+h6 {
+    font-size: 0.9rem;
+}
+
+/* PARAGRAPHS */
+
+p {
+    color: var(--color-text-secondary);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+/* SMALL TEXT */
+
+small {
+    color: var(--color-text-muted);
+    font-size: 0.85rem;
+}
+
+/* EMPHASIS */
+
+strong,
+b {
+    color: var(--color-text-primary);
+    font-weight: 700;
+}
+
+/* SELECTION */
+
+::selection {
+    color: var(--color-background);
+    background: var(--color-primary);
+}
+
+/* TEXT UTILITIES */
+
+.text-primary {
+    color: var(--color-text-primary);
+}
+
+.text-secondary {
+    color: var(--color-text-secondary);
+}
+
+.text-muted {
+    color: var(--color-text-muted);
+}
+
+.text-accent {
+    color: var(--color-accent);
+}
+
+.text-highlight {
+    color: var(--color-primary);
+}

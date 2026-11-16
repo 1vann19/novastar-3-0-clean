@@ -1,0 +1,113 @@
+/* =========================================
+   NOVASTAR 3.0 CLEAN
+   LAYOUT — SIDEBAR
+========================================= */
+
+/* SIDEBAR */
+
+.app-sidebar {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    width: 260px;
+    min-height: 100vh;
+    padding: var(--space-5);
+    background: var(--color-surface);
+    border-right: 1px solid var(--color-border);
+    transition: width var(--transition-fast);
+}
+
+/* SIDEBAR HEADER */
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    min-height: 48px;
+    margin-bottom: var(--space-6);
+}
+
+/* BRAND */
+
+.sidebar-brand {
+    color: var(--color-text-primary);
+    font-size: 1.25rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+}
+
+/* NAVIGATION */
+
+.sidebar-navigation {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: var(--space-5);
+}
+
+/* NAVIGATION GROUP */
+
+.sidebar-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+/* GROUP LABEL */
+
+.sidebar-group-label {
+    padding-inline: var(--space-2);
+    color: var(--color-text-muted);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+/* NAVIGATION ITEM */
+
+.sidebar-link {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    min-height: 42px;
+    padding: 10px 12px;
+    border-radius: var(--radius-md);
+    color: var(--color-text-secondary);
+    font-size: 0.9rem;
+    transition:
+        background var(--transition-fast),
+        color var(--transition-fast);
+}
+
+/* HOVER */
+
+.sidebar-link:hover {
+    color: var(--color-text-primary);
+    background: var(--color-surface-elevated);
+}
+
+/* ACTIVE LINK */
+
+.sidebar-link.active {
+    color: var(--color-text-primary);
+    background: rgba(9, 187, 200, 0.14);
+}
+
+/* SIDEBAR FOOTER */
+
+.sidebar-footer {
+    margin-top: auto;
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--color-border);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .app-sidebar {
+        display: none;
+    }
+
+}

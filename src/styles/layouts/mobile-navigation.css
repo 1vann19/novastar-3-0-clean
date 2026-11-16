@@ -1,0 +1,87 @@
+/* =========================================
+   NOVASTAR 3.0 CLEAN
+   LAYOUT — MOBILE NAVIGATION
+========================================= */
+
+/* MOBILE NAVIGATION */
+
+.mobile-navigation {
+    display: none;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    padding: 10px 12px;
+    background: var(--color-surface);
+    border-top: 1px solid var(--color-border);
+}
+
+/* NAVIGATION ITEMS */
+
+.mobile-navigation-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 6px;
+    width: 100%;
+}
+
+/* NAVIGATION LINK */
+
+.mobile-navigation-link {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    min-width: 0;
+    min-height: 52px;
+    padding: 6px 4px;
+    border-radius: var(--radius-md);
+    color: var(--color-text-muted);
+    font-size: 0.7rem;
+    text-align: center;
+    transition:
+        background var(--transition-fast),
+        color var(--transition-fast);
+}
+
+/* ACTIVE LINK */
+
+.mobile-navigation-link.active {
+    color: var(--color-primary);
+    background: rgba(9, 187, 200, 0.10);
+}
+
+/* HOVER */
+
+.mobile-navigation-link:hover {
+    color: var(--color-text-primary);
+}
+
+/* MOBILE BREAKPOINT */
+
+@media (max-width: 768px) {
+
+    .mobile-navigation {
+        display: block;
+    }
+
+    .app-content {
+        padding-bottom: 100px;
+    }
+
+}
+
+/* DESKTOP */
+
+@media (min-width: 769px) {
+
+    .mobile-navigation {
+        display: none;
+    }
+
+}

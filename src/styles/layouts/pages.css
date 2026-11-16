@@ -1,0 +1,1190 @@
+/* =========================================
+   NOVASTAR 3.0 CLEAN
+   LAYOUT — PAGES
+========================================= */
+
+.page-container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: var(--space-7);
+}
+
+.page-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-3);
+    margin-bottom: var(--space-7);
+}
+
+.page-header-eyebrow {
+    color: var(--color-primary);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.page-header h1 {
+    margin: 0;
+    color: var(--color-text-primary);
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.page-header p {
+    max-width: 700px;
+    margin: 0;
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+}
+
+.page-content {
+    width: 100%;
+    min-width: 0;
+}
+
+.page-content .card {
+    max-width: 900px;
+}
+
+.page-content .card h2 {
+    margin-top: var(--space-4);
+    margin-bottom: var(--space-2);
+}
+
+.page-content .card p {
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+    .page-container {
+        padding: var(--space-5);
+    }
+
+    .page-header {
+        margin-bottom: var(--space-5);
+    }
+}
+
+@media (max-width: 480px) {
+    .page-container {
+        padding: var(--space-4);
+    }
+}
+
+/* =========================================
+   HOME — DASHBOARD GRID
+========================================= */
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-5);
+    width: 100%;
+}
+
+.dashboard-grid .card {
+    min-width: 0;
+    height: 100%;
+}
+
+.dashboard-grid .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-2);
+    height: 100%;
+}
+
+.dashboard-grid .card h2 {
+    color: var(--color-text-primary);
+    font-size: 1.2rem;
+}
+
+.dashboard-grid .card p {
+    margin: 0;
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
+    }
+}
+
+/* =========================================
+   ACADEMIES — ACADEMY GRID
+========================================= */
+
+.academies-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-5);
+    width: 100%;
+}
+
+.academy-card {
+    min-width: 0;
+    min-height: 220px;
+    border: 1px solid var(--color-border);
+    transition:
+        transform var(--transition-fast),
+        border-color var(--transition-fast),
+        background var(--transition-fast);
+}
+
+.academy-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--color-primary);
+}
+
+.academy-card .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-3);
+    height: 100%;
+}
+
+.academy-symbol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-md);
+    background: rgba(9, 187, 200, 0.1);
+    color: var(--color-primary);
+    font-size: 1.7rem;
+}
+
+.academy-card h2 {
+    margin: 0;
+    color: var(--color-text-primary);
+    font-size: 1.25rem;
+}
+
+.academy-card p {
+    margin: 0;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+
+.academy-card .badge {
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    .academies-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
+    }
+}
+
+/* =========================================
+   MY PROGRESS — PROGRESS GRID
+========================================= */
+
+.progress-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-5);
+    width: 100%;
+}
+
+.progress-section-card {
+    min-width: 0;
+    min-height: 220px;
+    border: 1px solid var(--color-border);
+    transition:
+        transform var(--transition-fast),
+        border-color var(--transition-fast);
+}
+
+.progress-section-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--color-primary);
+}
+
+.progress-section-card .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-3);
+    height: 100%;
+}
+
+.progress-section-symbol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-md);
+    background: rgba(9, 187, 200, 0.1);
+    color: var(--color-primary);
+    font-size: 1.7rem;
+}
+
+.progress-section-card h2 {
+    margin: 0;
+    color: var(--color-text-primary);
+    font-size: 1.25rem;
+}
+
+.progress-section-card p {
+    margin: 0;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+
+.progress-section-card .badge {
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    .progress-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
+    }
+}
+
+/* =========================================
+   ACTIVITY HUB — ACTIVITY GRID
+========================================= */
+
+.activity-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-5);
+    width: 100%;
+}
+
+.activity-section-card {
+    min-width: 0;
+    min-height: 220px;
+    border: 1px solid var(--color-border);
+    transition:
+        transform var(--transition-fast),
+        border-color var(--transition-fast);
+}
+
+.activity-section-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--color-primary);
+}
+
+.activity-section-card .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-3);
+    height: 100%;
+}
+
+.activity-section-symbol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-md);
+    background: rgba(9, 187, 200, 0.1);
+    color: var(--color-primary);
+    font-size: 1.7rem;
+}
+
+.activity-section-card h2 {
+    margin: 0;
+    color: var(--color-text-primary);
+    font-size: 1.25rem;
+}
+
+.activity-section-card p {
+    margin: 0;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+
+.activity-section-card .badge {
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    .activity-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
+    }
+}
+
+/* =========================================
+   MY NOTES — NOTES GRID
+========================================= */
+
+.notes-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-5);
+    width: 100%;
+}
+
+.note-section-card {
+    min-width: 0;
+    min-height: 220px;
+    border: 1px solid var(--color-border);
+    transition:
+        transform var(--transition-fast),
+        border-color var(--transition-fast);
+}
+
+.note-section-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--color-primary);
+}
+
+.note-section-card .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-3);
+    height: 100%;
+}
+
+.note-section-symbol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-md);
+    background: rgba(9, 187, 200, 0.1);
+    color: var(--color-primary);
+    font-size: 1.7rem;
+}
+
+.note-section-card h2 {
+    margin: 0;
+    color: var(--color-text-primary);
+    font-size: 1.25rem;
+}
+
+.note-section-card p {
+    margin: 0;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+
+.note-section-card .badge {
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    .notes-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
+    }
+}
+
+/* =========================================
+   RESOURCES — RESOURCE GRID
+========================================= */
+
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-5);
+    width: 100%;
+}
+
+.resource-section-card {
+    min-width: 0;
+    min-height: 220px;
+    border: 1px solid var(--color-border);
+    transition:
+        transform var(--transition-fast),
+        border-color var(--transition-fast);
+}
+
+.resource-section-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--color-primary);
+}
+
+.resource-section-card .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-3);
+    height: 100%;
+}
+
+.resource-section-symbol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-md);
+    background: rgba(9, 187, 200, 0.1);
+    color: var(--color-primary);
+    font-size: 1.7rem;
+}
+
+.resource-section-card h2 {
+    margin: 0;
+    color: var(--color-text-primary);
+    font-size: 1.25rem;
+}
+
+.resource-section-card p {
+    margin: 0;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+
+.resource-section-card .badge {
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    .resources-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
+    }
+}
+
+/* =========================================
+   GROUP PROJECTS — PROJECT GRID
+========================================= */
+
+.group-projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-5);
+    width: 100%;
+}
+
+.group-project-section-card {
+    min-width: 0;
+    min-height: 220px;
+    border: 1px solid var(--color-border);
+    transition:
+        transform var(--transition-fast),
+        border-color var(--transition-fast);
+}
+
+.group-project-section-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--color-primary);
+}
+
+.group-project-section-card .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-3);
+    height: 100%;
+}
+
+.group-project-section-symbol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-md);
+    background: rgba(9, 187, 200, 0.1);
+    color: var(--color-primary);
+    font-size: 1.7rem;
+}
+
+.group-project-section-card h2 {
+    margin: 0;
+    color: var(--color-text-primary);
+    font-size: 1.25rem;
+}
+
+.group-project-section-card p {
+    margin: 0;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+
+.group-project-section-card .badge {
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    .group-projects-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
+    }
+}
+
+/* =========================================
+   ROXIE — AI ASSISTANT
+========================================= */
+
+.roxie-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+    width: 100%;
+}
+
+.roxie-introduction {
+    border: 1px solid rgba(9, 187, 200, 0.25);
+    background:
+        radial-gradient(
+            ellipse at top right,
+            rgba(9, 187, 200, 0.13),
+            transparent 65%
+        ),
+        var(--color-surface);
+}
+
+.roxie-introduction .card-body {
+    display: flex;
+    align-items: center;
+    gap: var(--space-5);
+    padding: var(--space-6);
+}
+
+.roxie-main-symbol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 76px;
+    height: 76px;
+    border-radius: var(--radius-lg);
+    background: rgba(9, 187, 200, 0.12);
+    color: var(--color-primary);
+    font-size: 3rem;
+}
+
+.roxie-introduction h2 {
+    margin: var(--space-3) 0;
+    color: var(--color-text-primary);
+    font-size: 1.6rem;
+}
+
+.roxie-introduction p {
+    margin: 0;
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+}
+
+.roxie-sections {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-5);
+}
+
+.roxie-section-card {
+    min-width: 0;
+    min-height: 220px;
+    border: 1px solid var(--color-border);
+    transition:
+        transform var(--transition-fast),
+        border-color var(--transition-fast);
+}
+
+.roxie-section-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--color-primary);
+}
+
+.roxie-section-card .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-3);
+    height: 100%;
+}
+
+.roxie-section-symbol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-md);
+    background: rgba(9, 187, 200, 0.1);
+    color: var(--color-primary);
+    font-size: 1.7rem;
+}
+
+.roxie-section-card h2 {
+    margin: 0;
+    color: var(--color-text-primary);
+    font-size: 1.25rem;
+}
+
+.roxie-section-card p {
+    margin: 0;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+
+.roxie-section-card .badge {
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    .roxie-sections {
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
+    }
+
+    .roxie-introduction .card-body {
+        align-items: flex-start;
+        padding: var(--space-4);
+    }
+
+    .roxie-main-symbol {
+        width: 56px;
+        height: 56px;
+        font-size: 2.2rem;
+    }
+}
+
+/* =========================================
+   MISSIONS — MISSION GRID
+========================================= */
+
+.missions-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-5);
+    width: 100%;
+}
+
+.mission-section-card {
+    min-width: 0;
+    min-height: 220px;
+    border: 1px solid var(--color-border);
+    transition:
+        transform var(--transition-fast),
+        border-color var(--transition-fast);
+}
+
+.mission-section-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--color-primary);
+}
+
+.mission-section-card .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-3);
+    height: 100%;
+}
+
+.mission-section-symbol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-md);
+    background: rgba(9, 187, 200, 0.1);
+    color: var(--color-primary);
+    font-size: 1.7rem;
+}
+
+.mission-section-card h2 {
+    margin: 0;
+    color: var(--color-text-primary);
+    font-size: 1.25rem;
+}
+
+.mission-section-card p {
+    margin: 0;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+
+.mission-section-card .badge {
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    .missions-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
+    }
+}
+
+/* =========================================
+   MY NOTES — FUNCTIONAL WORKSPACE
+========================================= */
+
+.notes-workspace {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+    width: 100%;
+}
+
+.notes-toolbar,
+.notes-library-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+}
+
+.notes-toolbar h2,
+.notes-library-header h2 {
+    margin: 0;
+    color: var(--color-text-primary);
+    font-size: 1.4rem;
+}
+
+.notes-toolbar p,
+.notes-library-header p {
+    margin: var(--space-2) 0 0;
+    color: var(--color-text-secondary);
+}
+
+.notes-editor {
+    border: 1px solid var(--color-border);
+}
+
+.notes-editor .card-body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+.notes-editor h2 {
+    margin: 0;
+    color: var(--color-text-primary);
+}
+
+.notes-editor form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+.notes-editor .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.notes-editor input,
+.notes-editor select,
+.notes-editor textarea,
+.notes-filters input,
+.notes-filters select {
+    width: 100%;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background: var(--color-surface);
+    color: var(--color-text-primary);
+    font: inherit;
+}
+
+.notes-editor textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.notes-editor input:focus,
+.notes-editor select:focus,
+.notes-editor textarea:focus,
+.notes-filters input:focus,
+.notes-filters select:focus {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+#note-form-message {
+    margin: 0;
+    color: var(--color-success);
+    font-size: 0.9rem;
+}
+
+.notes-library {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+.notes-filters {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--space-3);
+}
+
+.notes-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-4);
+}
+
+.note-item {
+    min-width: 0;
+    border: 1px solid var(--color-border);
+}
+
+.note-item .card-body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    height: 100%;
+}
+
+.note-item-header,
+.note-item-footer,
+.note-item-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+}
+
+.note-item-header h3 {
+    margin: var(--space-2) 0 0;
+    color: var(--color-text-primary);
+    overflow-wrap: anywhere;
+}
+
+.note-item-content {
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+    white-space: normal;
+}
+
+.note-item-footer {
+    margin-top: auto;
+    padding-top: var(--space-3);
+    border-top: 1px solid var(--color-border);
+}
+
+.note-item-footer small {
+    color: var(--color-text-muted);
+}
+
+.note-item-actions {
+    justify-content: flex-end;
+}
+
+.notes-empty-state {
+    grid-column: 1 / -1;
+    text-align: center;
+    border: 1px dashed var(--color-border);
+}
+
+.notes-empty-state h3 {
+    color: var(--color-text-primary);
+}
+
+.notes-empty-state p {
+    color: var(--color-text-secondary);
+}
+
+@media (max-width: 768px) {
+    .notes-list {
+        grid-template-columns: 1fr;
+    }
+
+    .notes-filters {
+        grid-template-columns: 1fr;
+    }
+
+    .notes-toolbar,
+    .notes-library-header {
+        align-items: flex-start;
+    }
+}
+
+/* =========================================
+   NOVASTAR 3.0 CLEAN
+   ACADEMIES WORKSPACE
+========================================= */
+
+.academies-workspace {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+    width: 100%;
+}
+
+.academies-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    flex-wrap: wrap;
+}
+
+.academies-toolbar h2 {
+    margin: 0 0 var(--space-2);
+    color: var(--color-text-primary);
+}
+
+.academies-toolbar p {
+    margin: 0;
+    color: var(--color-text-secondary);
+}
+
+.academies-search {
+    width: min(100%, 320px);
+}
+
+.academies-search input {
+    width: 100%;
+    min-height: 44px;
+    padding: var(--space-3) var(--space-4);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background: var(--color-surface);
+    color: var(--color-text-primary);
+    outline: none;
+    transition: border-color var(--transition-fast);
+}
+
+.academies-search input:focus {
+    border-color: var(--color-primary);
+}
+
+.academies-search input::placeholder {
+    color: var(--color-text-muted);
+}
+
+.academies-grid[hidden],
+.academies-empty[hidden] {
+    display: none;
+}
+
+.academies-empty {
+    padding: var(--space-6);
+    border: 1px dashed var(--color-border);
+    border-radius: var(--radius-lg);
+    color: var(--color-text-secondary);
+    text-align: center;
+}
+
+@media (max-width: 640px) {
+    .academies-toolbar {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .academies-search {
+        width: 100%;
+    }
+}
+
+/* =========================================
+   MY PROGRESS - LEARNING GOALS
+========================================= */
+
+.progress-goals-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    margin-top: var(--space-4);
+}
+
+.progress-goals-form label {
+    color: var(--color-text-secondary);
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.progress-goals-controls {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    flex-wrap: wrap;
+}
+
+.progress-goals-controls input {
+    flex: 1;
+    min-width: 180px;
+    min-height: 44px;
+    padding: 0 var(--space-3);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background: var(--color-surface);
+    color: var(--color-text-primary);
+    outline: none;
+    transition: border-color var(--transition-fast);
+}
+
+.progress-goals-controls input:focus {
+    border-color: var(--color-primary);
+}
+
+.progress-goals-controls input::placeholder {
+    color: var(--color-text-muted);
+}
+
+.progress-goals-controls button {
+    min-height: 44px;
+}
+
+.progress-goals-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    padding: 0;
+    margin: var(--space-2) 0 0;
+    list-style: none;
+}
+
+.progress-goals-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3);
+    padding: var(--space-3);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background: var(--color-surface);
+}
+
+.progress-goals-list li span {
+    color: var(--color-text-primary);
+    overflow-wrap: anywhere;
+}
+
+.progress-goals-list li button {
+    flex-shrink: 0;
+    padding: var(--space-2) var(--space-3);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background: transparent;
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    transition: border-color var(--transition-fast),
+                color var(--transition-fast);
+}
+
+.progress-goals-list li button:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+@media (max-width: 640px) {
+    .progress-goals-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .progress-goals-controls input {
+        width: 100%;
+    }
+}
+.progress-goal-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    flex-shrink: 0;
+}
+
+@media (max-width: 640px) {
+    .progress-goals-list li {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .progress-goal-actions {
+        width: 100%;
+    }
+
+    .progress-goal-actions button {
+        flex: 1;
+    }
+}
+
+/* =========================================
+   MY PROGRESS - COMPLETED ACTIVITIES
+========================================= */
+
+.progress-activities-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    margin-top: var(--space-4);
+}
+
+.progress-activities-form label {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.progress-activities-controls {
+    display: flex;
+    gap: var(--space-2);
+    flex-wrap: wrap;
+}
+
+.progress-activities-controls input {
+    flex: 1;
+    min-width: 150px;
+    padding: 10px 12px;
+    color: var(--text-primary);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+}
+
+.progress-activities-controls input:focus {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+}
+
+.progress-activities-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.progress-activities-list li {
+    padding: var(--space-3);
+    color: var(--text-primary);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    overflow-wrap: anywhere;
+}
+
+.progress-activity-date {
+    display: block;
+    margin-top: var(--space-2);
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    opacity: 0.75;
+}
+
+
+@media (max-width: 600px) {
+    .progress-activities-controls {
+        flex-direction: column;
+    }
+
+    .progress-activities-controls input,
+    .progress-activities-controls button {
+        width: 100%;
+    }
+}

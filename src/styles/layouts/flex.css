@@ -1,0 +1,93 @@
+
+/* =========================================
+   NOVASTAR 3.0 CLEAN
+   LAYOUT — FLEX SYSTEM
+========================================= */
+
+/* FLEX BASE */
+
+.flex-layout {
+    display: flex;
+    min-width: 0;
+}
+
+/* DIRECTIONS */
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+/* ALIGNMENT */
+
+.flex-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-align-center {
+    align-items: center;
+}
+
+.flex-align-start {
+    align-items: flex-start;
+}
+
+.flex-align-end {
+    align-items: flex-end;
+}
+
+/* JUSTIFICATION */
+
+.flex-justify-center {
+    justify-content: center;
+}
+
+.flex-justify-between {
+    justify-content: space-between;
+}
+
+.flex-justify-start {
+    justify-content: flex-start;
+}
+
+.flex-justify-end {
+    justify-content: flex-end;
+}
+
+/* WRAPPING */
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-nowrap {
+    flex-wrap: nowrap;
+}
+
+/* FLEX GROW */
+
+.flex-grow {
+    flex: 1 1 auto;
+}
+
+.flex-shrink-0 {
+    flex-shrink: 0;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 640px) {
+
+    .flex-mobile-column {
+        flex-direction: column;
+    }
+
+    .flex-mobile-wrap {
+        flex-wrap: wrap;
+    }
+
+}
